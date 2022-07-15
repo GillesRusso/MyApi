@@ -1,9 +1,6 @@
 package ch.clip.samples.authapi.recipe;
-
 import ch.clip.samples.authapi.dessert.Dessert;
-
 import javax.persistence.*;
-
 @Entity
 public class Recipe {
     @Id

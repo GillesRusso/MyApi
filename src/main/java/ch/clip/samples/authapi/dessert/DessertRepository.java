@@ -5,7 +5,6 @@ import org.springframework.stereotype.Repository;
 
 
 public interface DessertRepository extends JpaRepository<Dessert, Long> {
-  //  Dessert findyByDessertName (String name);
+  //Dessert FindyByDessertName (String name);
 
-   // Dessert addDessert(DessertRepository name, Long id);
 }

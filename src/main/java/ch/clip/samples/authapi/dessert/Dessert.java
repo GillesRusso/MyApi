@@ -9,9 +9,7 @@ public class Dessert {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String origin;
-
     private String name;
-
     @ManyToOne
     @JoinColumn(name = "appuser_id", referencedColumnName = "id")
     private AppUser appuser;

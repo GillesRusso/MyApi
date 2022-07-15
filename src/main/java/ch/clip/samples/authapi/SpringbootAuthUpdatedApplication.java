@@ -43,6 +43,8 @@ public class SpringbootAuthUpdatedApplication {
 	@Bean
 	public CommandLineRunner demo(TaskRepository repository, AppUserRepository userRepository, DessertRepository dessertRepository, IngredientRepository ingredientRepository, RecipeRepository recipeRepository) {
 		return (args) -> {
+			//Für jede Entität werden 3 Datensätze definiert und schliesslich hinzugefügt
+
 			Recipe r1 = new Recipe(1,"pre heat oven");
 			Recipe r2 = new Recipe(8,"pour milk");
 			Recipe r3 = new Recipe(7,"measure Sugar");
@@ -88,19 +90,25 @@ public class SpringbootAuthUpdatedApplication {
 			AppUser u3 = new AppUser("user2", "123");
 			AppUser u4 = new AppUser("user4-service", "123");
 
-			
 			u1.setTask(t1);
 			u2.setTask(t2);
 			u3.setTask(t3);
+
+			// save desserts
 			dessertRepository.save(d1);
 			dessertRepository.save(d2);
 			dessertRepository.save(d3);
+
+			//save ingredients
 			ingredientRepository.save(i1);
 			ingredientRepository.save(i2);
 			ingredientRepository.save(i3);
+			//save recipies
 			recipeRepository.save(r1);
 			recipeRepository.save(r2);
 			recipeRepository.save(r3);
+
+			//save users
 			userRepository.save(u1);
 			userRepository.save(u2);
 			userRepository.save(u3);
