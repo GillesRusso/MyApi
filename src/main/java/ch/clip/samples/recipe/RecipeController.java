@@ -1,4 +1,4 @@
-package ch.clips.samples.recipe;
+package ch.clip.samples.recipe;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/Recipies")
+@RequestMapping("/recipies")
 public class RecipeController {
     @Autowired
     private RecipeRepository recipeRepository ;

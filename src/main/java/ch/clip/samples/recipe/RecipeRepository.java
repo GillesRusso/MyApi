@@ -1,7 +1,7 @@
-package ch.clips.samples.recipe;
+package ch.clip.samples.recipe;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface RecipeRepository extends JpaRepository<Recipe, Long> {
-    Recipe findByRecipeName(String name);
+    //Recipe findByRecipeName(String name);
 }

@@ -1,4 +1,4 @@
-package ch.clips.samples.recipe;
+package ch.clip.samples.recipe;
 
 import ch.clip.samples.authapi.dessert.Dessert;
 

@@ -14,7 +14,7 @@ public class Ingredient {
 
     private String name;
 
-    @ManyToMany
+    @ManyToOne
     @JoinColumn(name = "dessert_id", referencedColumnName = "id")
     private Dessert dessert;
 
