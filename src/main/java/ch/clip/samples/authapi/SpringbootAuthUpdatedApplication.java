@@ -1,7 +1,9 @@
 package ch.clip.samples.authapi;
 
 import dessert.Dessert;
+import dessert.DessertRepository;
 import ingredient.Ingredient;
+import ingredient.IngredientRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +20,7 @@ import ch.clip.samples.authapi.task.TaskRepository;
 import ch.clip.samples.authapi.user.AppUser;
 import ch.clip.samples.authapi.user.AppUserRepository;
 import recipe.Recipe;
+import recipe.RecipeRepository;
 
 // https://auth0.com/blog/implementing-jwt-authentication-on-spring-boot/
 // https://github.com/auth0/java-jwt
@@ -38,7 +41,7 @@ public class SpringbootAuthUpdatedApplication {
 	}
 
 	@Bean
-	public CommandLineRunner demo(TaskRepository repository, AppUserRepository userRepository) {
+	public CommandLineRunner demo(TaskRepository repository, AppUserRepository userRepository, DessertRepository dessertRepository, IngredientRepository ingredientRepository, RecipeRepository recipeRepository) {
 		return (args) -> {
 			Recipe r1 = new Recipe(1,"pre heat oven");
 			Recipe r2 = new Recipe(8,"pour milk");
@@ -89,6 +92,15 @@ public class SpringbootAuthUpdatedApplication {
 			u1.setTask(t1);
 			u2.setTask(t2);
 			u3.setTask(t3);
+			dessertRepository.save(d1);
+			dessertRepository.save(d2);
+			dessertRepository.save(d3);
+			ingredientRepository.save(i1);
+			ingredientRepository.save(i2);
+			ingredientRepository.save(i3);
+			recipeRepository.save(r1);
+			recipeRepository.save(r2);
+			recipeRepository.save(r3);
 			userRepository.save(u1);
 			userRepository.save(u2);
 			userRepository.save(u3);
