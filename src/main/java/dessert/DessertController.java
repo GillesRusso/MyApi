@@ -1,6 +1,5 @@
 package dessert;
 
-import ch.clip.samples.authapi.user.AppUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
