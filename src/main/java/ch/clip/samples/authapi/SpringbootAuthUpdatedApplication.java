@@ -17,6 +17,7 @@ import ch.clip.samples.authapi.task.Task;
 import ch.clip.samples.authapi.task.TaskRepository;
 import ch.clip.samples.authapi.user.AppUser;
 import ch.clip.samples.authapi.user.AppUserRepository;
+import recipe.Recipe;
 
 // https://auth0.com/blog/implementing-jwt-authentication-on-spring-boot/
 // https://github.com/auth0/java-jwt
@@ -39,6 +40,10 @@ public class SpringbootAuthUpdatedApplication {
 	@Bean
 	public CommandLineRunner demo(TaskRepository repository, AppUserRepository userRepository) {
 		return (args) -> {
+			Recipe r1 = new Recipe(1,"pre heat oven");
+			Recipe r2 = new Recipe(8,"pour milk");
+			Recipe r3 = new Recipe(7,"measure Sugar");
+
 			Ingredient i1 = new Ingredient(3, "Eggs");
 			Ingredient i2 = new Ingredient(4, "Sugar");
 			Ingredient i3 = new Ingredient(2, "Milk");
