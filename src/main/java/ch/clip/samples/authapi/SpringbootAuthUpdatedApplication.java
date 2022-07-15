@@ -1,5 +1,6 @@
 package ch.clip.samples.authapi;
 
+import dessert.Dessert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +38,10 @@ public class SpringbootAuthUpdatedApplication {
 	@Bean
 	public CommandLineRunner demo(TaskRepository repository, AppUserRepository userRepository) {
 		return (args) -> {
+			Dessert d1 = new Dessert("Italy", "Panna Cotta");
+			Dessert d2 = new Dessert("Turkey", "Baklava");
+			Dessert d3 = new Dessert("Scottland", "Scones");
+			
 			// save a couple of tasks
 			Task t1 = new Task("Dinner with my Family");
 			Task t2 = new Task("movie Night with my Family");
