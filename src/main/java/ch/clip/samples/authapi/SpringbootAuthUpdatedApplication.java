@@ -2,8 +2,8 @@ package ch.clip.samples.authapi;
 
 import ch.clip.samples.authapi.dessert.Dessert;
 import ch.clip.samples.authapi.dessert.DessertRepository;
-import ch.clips.samples.authapi.ingredient.Ingredient;
-import ch.clips.samples.authapi.ingredient.IngredientRepository;
+import ch.clip.samples.authapi.ingredient.Ingredient;
+import ch.clip.samples.authapi.ingredient.IngredientRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

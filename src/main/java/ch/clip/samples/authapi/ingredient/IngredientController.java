@@ -1,4 +1,4 @@
-package ch.clips.samples.authapi.ingredient;
+package ch.clip.samples.authapi.ingredient;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

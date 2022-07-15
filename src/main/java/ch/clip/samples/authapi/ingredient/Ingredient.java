@@ -1,9 +1,10 @@
-package ch.clips.samples.authapi.ingredient;
+package ch.clip.samples.authapi.ingredient;
 
 import ch.clip.samples.authapi.dessert.Dessert;
 
 import javax.persistence.*;
 
+@Entity
 public class Ingredient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
