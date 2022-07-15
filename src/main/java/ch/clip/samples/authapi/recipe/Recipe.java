@@ -1,9 +1,10 @@
-package ch.clip.samples.recipe;
+package ch.clip.samples.authapi.recipe;
 
 import ch.clip.samples.authapi.dessert.Dessert;
 
 import javax.persistence.*;
 
+@Entity
 public class Recipe {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,7 +14,7 @@ public class Recipe {
 
     private String name;
 
-    @ManyToMany
+    @ManyToOne
     @JoinColumn(name = "dessert_id", referencedColumnName = "id")
     private Dessert dessert;
 

@@ -1,4 +1,4 @@
-package ch.clip.samples.recipe;
+package ch.clip.samples.authapi.recipe;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

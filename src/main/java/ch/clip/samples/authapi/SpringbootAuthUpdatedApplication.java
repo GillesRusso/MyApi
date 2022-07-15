@@ -19,8 +19,8 @@ import ch.clip.samples.authapi.task.Task;
 import ch.clip.samples.authapi.task.TaskRepository;
 import ch.clip.samples.authapi.user.AppUser;
 import ch.clip.samples.authapi.user.AppUserRepository;
-import ch.clip.samples.recipe.Recipe;
-import ch.clip.samples.recipe.RecipeRepository;
+import ch.clip.samples.authapi.recipe.Recipe;
+import ch.clip.samples.authapi.recipe.RecipeRepository;
 
 // https://auth0.com/blog/implementing-jwt-authentication-on-spring-boot/
 // https://github.com/auth0/java-jwt
