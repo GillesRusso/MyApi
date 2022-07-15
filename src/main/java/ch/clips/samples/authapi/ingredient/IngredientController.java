@@ -1,7 +1,5 @@
-package ingredient;
+package ch.clips.samples.authapi.ingredient;
 
-import dessert.Dessert;
-import dessert.DessertRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

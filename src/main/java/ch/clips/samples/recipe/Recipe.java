@@ -1,16 +1,15 @@
-package ingredient;
+package ch.clips.samples.recipe;
 
-import ch.clip.samples.authapi.user.AppUser;
-import dessert.Dessert;
+import ch.clip.samples.authapi.dessert.Dessert;
 
 import javax.persistence.*;
 
-public class Ingredient {
+public class Recipe {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private int price;
+    private int stepNum;
 
     private String name;
 
@@ -18,12 +17,12 @@ public class Ingredient {
     @JoinColumn(name = "dessert_id", referencedColumnName = "id")
     private Dessert dessert;
 
-    public Ingredient(){
+    public Recipe(){
         super();
     }
 
-    public Ingredient(int price, String name) {
-        this.price = price;
+    public Recipe(int stepNum, String name) {
+        this.stepNum = stepNum;
         this.name = name;
     }
 
@@ -35,6 +34,7 @@ public class Ingredient {
         this.dessert = dessert;
     }
 
+
     public Long getId() {
         return id;
     }
@@ -43,12 +43,12 @@ public class Ingredient {
         this.id = id;
     }
 
-    public int getPrice() {
-        return price;
+    public int getStepNum() {
+        return stepNum;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setStepNum(int stepNum) {
+        this.stepNum = stepNum;
     }
 
     public String getName() {
@@ -61,11 +61,10 @@ public class Ingredient {
 
     @Override
     public String toString() {
-        return "Ingredient{" +
+        return "Recipe{" +
                 "id=" + id +
-                ", price=" + price +
+                ", stepNum=" + stepNum +
                 ", name='" + name + '\'' +
-                ", dessert=" + dessert +
                 '}';
     }
 }

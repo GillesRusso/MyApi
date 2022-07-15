@@ -1,4 +1,4 @@
-package recipe;
+package ch.clips.samples.recipe;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

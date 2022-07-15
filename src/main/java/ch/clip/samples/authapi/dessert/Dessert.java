@@ -1,4 +1,4 @@
-package dessert;
+package ch.clip.samples.authapi.dessert;
 
 import javax.persistence.*;
 import ch.clip.samples.authapi.user.AppUser;
@@ -12,7 +12,7 @@ public class Dessert {
 
     private String name;
 
-    @ManyToMany
+    @ManyToOne
     @JoinColumn(name = "appuser_id", referencedColumnName = "id")
     private AppUser appuser;
 

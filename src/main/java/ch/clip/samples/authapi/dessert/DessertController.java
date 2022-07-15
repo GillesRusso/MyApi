@@ -1,4 +1,4 @@
-package dessert;
+package ch.clip.samples.authapi.dessert;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

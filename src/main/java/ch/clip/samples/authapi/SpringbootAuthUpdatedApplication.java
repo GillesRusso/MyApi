@@ -1,9 +1,9 @@
 package ch.clip.samples.authapi;
 
-import dessert.Dessert;
-import dessert.DessertRepository;
-import ingredient.Ingredient;
-import ingredient.IngredientRepository;
+import ch.clip.samples.authapi.dessert.Dessert;
+import ch.clip.samples.authapi.dessert.DessertRepository;
+import ch.clips.samples.authapi.ingredient.Ingredient;
+import ch.clips.samples.authapi.ingredient.IngredientRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +19,8 @@ import ch.clip.samples.authapi.task.Task;
 import ch.clip.samples.authapi.task.TaskRepository;
 import ch.clip.samples.authapi.user.AppUser;
 import ch.clip.samples.authapi.user.AppUserRepository;
-import recipe.Recipe;
-import recipe.RecipeRepository;
+import ch.clips.samples.recipe.Recipe;
+import ch.clips.samples.recipe.RecipeRepository;
 
 // https://auth0.com/blog/implementing-jwt-authentication-on-spring-boot/
 // https://github.com/auth0/java-jwt
