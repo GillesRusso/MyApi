@@ -5,6 +5,7 @@ import ch.clip.samples.authapi.user.AppUser;
 
 @Entity
 public class Dessert {
+    //Die Klasse Dessert verfügt über die Attribute name und origin und ist mit der Tabelle AppUser verbunden
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

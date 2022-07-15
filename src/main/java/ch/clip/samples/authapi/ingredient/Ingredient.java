@@ -6,6 +6,7 @@ import javax.persistence.*;
 
 @Entity
 public class Ingredient {
+    //Die Klasse Ingredient verfügt über die Attribute name und price und ist mit der Tabelle dessert verbunden
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

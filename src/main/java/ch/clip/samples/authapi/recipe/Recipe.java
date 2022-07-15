@@ -3,6 +3,7 @@ import ch.clip.samples.authapi.dessert.Dessert;
 import javax.persistence.*;
 @Entity
 public class Recipe {
+    //Die Klasse Recipe verfügt über die Attribute name und stepnum und ist mit der Tabelle dessert verbunden
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
