@@ -37,7 +37,7 @@ public class UserController {
 
 	@PostMapping("/{id}")
 	public void addUser(@RequestBody AppUser user, @PathVariable Long id) { // , @RequestBody Task task) {
-		// service methode user, id -> Service taak getById user.setTask
+		// service methode user, id -> Service task getById user.setTask
 		taskUserService.addTask(user, id);
 	}
 
